@@ -3,12 +3,15 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const List = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
   text-decoration: none;
-
-  padding: 0;
-  margin: 0;
-`
+  padding: ${p => p.theme.space[0]}px;
+  margin: ${p => p.theme.space[0]}px;
+font-family: ${p => p.theme.fonts.heading};
+`;
 
 export const FriendList = ({friends}) => {
    
